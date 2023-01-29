@@ -1,72 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-.checkbox, .radio {
-    display:block
-}
-// angular-tree-component overrides
-
-tree-viewport {
-    overflow: hidden;
-}
-.tree-children.tree-children-no-padding { padding-left: 0 }
-.tree-children { padding-left: 20px; overflow: hidden }
-.node-drop-slot { display: block; height: 2px }
-.node-drop-slot.is-dragging-over { background: transparent; height: 20px; border: 2px dotted transparent; }
-.toggle-children-wrapper-expanded .toggle-children { 
-    &:before{
-        font: var(--fa-font-solid);
-        content: "\f107";
-        position: absolute;
+    .checkbox, .radio {
+        display:block
     }
- }
- .toggle-children-wrapper-collapsed .toggle-children {
-    &:before{
+    // angular-tree-component overrides
+    
+    tree-viewport {
+        overflow: hidden;
+    }
+    .tree-children.tree-children-no-padding { padding-left: 0 }
+    .tree-children { padding-left: 20px; overflow: hidden }
+    .node-drop-slot { display: block; height: 2px }
+    .node-drop-slot.is-dragging-over { background: transparent; height: 20px; border: 2px dotted transparent; }
+    .toggle-children-wrapper-expanded .toggle-children { 
+        &:before{
+            font: var(--fa-font-solid);
+            content: "\f107";
+            position: absolute;
+        }
+     }
+     .toggle-children-wrapper-collapsed .toggle-children {
+        &:before{
+            font: var(--fa-font-solid);
+            content: "\f105";
+        }
+    }
+    .toggle-children-wrapper {
+      padding: 10px;
+    }
+    /* tslint:disable */
+    .toggle-children {
+      background-image: none;
+      width: 15px;
+    }
+    .toggle-children:before {
         font: var(--fa-font-solid);
         content: "\f105";
+        position:relative;
     }
-}
-.toggle-children-wrapper {
-  padding: 10px;
-}
-/* tslint:disable */
-.toggle-children {
-  background-image: none;
-  width: 15px;
-}
-.toggle-children:before {
-    font: var(--fa-font-solid);
-    content: "\f105";
-    position:relative;
-}
-// tree-node-expander {
-//     order: 1;
-// }
-// tree-node-checkbox {
-//     order: 2;
-// }
-// .node-content-wrapper {
-//     order:3
-// }
-.node-content-wrapper-active,
-.node-content-wrapper.node-content-wrapper-active:hover,.node-content-wrapper-active.node-content-wrapper-focused {
-    background: transparent;
-}
-.node-content-wrapper-focused { background: transparent }
-.node-content-wrapper:hover { background: transparent}
-.node-content-wrapper-active, .node-content-wrapper-focused, .node-content-wrapper:hover {
-  box-shadow: none;
-}
-.node-content-wrapper.is-dragging-over { background: transparent; box-shadow: none }
-.tree-children { padding-left: 20px }
-.empty-tree-drop-slot .node-drop-slot { height: 20px; min-width: 100px }
+    // tree-node-expander {
+    //     order: 1;
+    // }
+    // tree-node-checkbox {
+    //     order: 2;
+    // }
+    // .node-content-wrapper {
+    //     order:3
+    // }
+    .node-content-wrapper-active,
+    .node-content-wrapper.node-content-wrapper-active:hover,.node-content-wrapper-active.node-content-wrapper-focused {
+        background: transparent;
+    }
+    .node-content-wrapper-focused { background: transparent }
+    .node-content-wrapper:hover { background: transparent}
+    .node-content-wrapper-active, .node-content-wrapper-focused, .node-content-wrapper:hover {
+      box-shadow: none;
+    }
+    .node-content-wrapper.is-dragging-over { background: transparent; box-shadow: none }
+    .tree-children { padding-left: 20px }
+    .empty-tree-drop-slot .node-drop-slot { height: 20px; min-width: 100px }
+    
+    tree-node-checkbox {
+      padding: 1px;
+      [type=checkbox] {
+          width:20px;
+          height:20px;
+      }
+    }
 
-tree-node-checkbox {
-  padding: 1px;
-  [type=checkbox] {
-      width:20px;
-      height:20px;
-  }
-}
+ 
 
 

@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit{
     useCheckbox: true,
     getChildren: this.getChildren.bind(this),
     nodeClass: (node:TreeNode) => {
-      return 'joffray';
+      return 'my-tree';
     }
   };
 
