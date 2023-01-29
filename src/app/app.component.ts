@@ -66,7 +66,7 @@ export class AppComponent implements AfterViewInit{
   ngAfterViewInit() {
 
   }
-  focusedTag:any = ".my-tree .node-content-wrapper-focused,.node-content-wrapper-active"
+  focusedTag:any = ".node-content-wrapper-focused,.node-content-wrapper-active"
   setNodeChildrenStyles (e:any) {
     setTimeout(()=>{
       console.log(e);
@@ -84,7 +84,7 @@ export class AppComponent implements AfterViewInit{
   }
   removeBackgrounds (e:any) {
     console.log(e);
-    let tags = document.querySelectorAll('.my-tree .node-content-wrapper');
+    let tags = document.querySelectorAll('.node-content-wrapper');
     tags.forEach((tag:any) => {
 
       tag.classList.remove('has-background-primary-light')
