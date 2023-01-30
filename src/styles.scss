@@ -1,5 +1,13 @@
+@import "~@verifone/uidesign-system/src/variables/colors.scss";
+@import "~@verifone/uidesign-system/src/variables/spacing.scss";
+@import "~@verifone/uidesign-system/src/variables/typography.scss";
+@import "~@verifone/uidesign-system/src/variables/colors.scss";
+@import "~@verifone/uidesign-system/src/utilities/initial-variables.scss";
+@import "~@verifone/uidesign-system/src/utilities/derived-variables.scss";
 /* You can add global styles to this file, and also import other style files */
-
+    body {
+        accent-color: $accent;
+    }
     .checkbox, .radio {
         display:block
     }
