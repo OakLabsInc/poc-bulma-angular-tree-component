@@ -1,7 +1,10 @@
 @import "../node_modules/@verifone/ui-design-system/src/variables/colors.scss";
 /* You can add global styles to this file, and also import other style files */
     
-
+tree-root {
+  tree-viewport {
+    overflow: hidden !important;
+  }
   .tree-node-loading {
     display: block;
     padding: 10px 0;
@@ -13,7 +16,6 @@
     width: 16px;
     position:relative;
   }
-
  
   .toggle-children-wrapper-collapsed .toggle-children {
     transform: rotate(0) !important;
@@ -65,26 +67,18 @@
     margin-left: 10px;
   }
   .node-content-wrapper-focused {
-    background: $vf-info-20;
+    background: rgba($vf-info-50, .25)
   }
   .node-content-wrapper:hover {
-    background: $vf-info-20;
+    background: rgba($vf-info-50, .25)
   }
 
   .node-content-wrapper-active, .node-content-wrapper.node-content-wrapper-active:hover, .node-content-wrapper-active.node-content-wrapper-focused {
-    background: $vf-info-50;
+    background: rgba($vf-info-50, .75) ;
   }
+
   tree-node-checkbox {
     padding-top: 5px;
-  }
-
-  .load-more {
-    border-left: 1px solid $vf-black-20;
-    padding-left: 30px;
-    margin-left: 10px;
-  }
-
-  tree-node-checkbox {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -167,15 +161,7 @@
     }
   }
 
-  .load-more-container {
-    display: flex;
-    margin-left: 32px;
-    margin-top: 10px;
-
-    span {
-      margin-left: 30px;
-    }
-  }
+}
 
  
 
