@@ -1,4 +1,7 @@
-@import "../node_modules/@verifone/ui-design-system/src/variables/colors.scss";
+@import "../node_modules/bulma/css/bulma";
+@import "../node_modules/@verifone/ui-design-system/src/variables/all";
+@import "../node_modules/@verifone/ui-design-system/src/variables/misc.scss";
+
 /* You can add global styles to this file, and also import other style files */
     
 tree-root {
