@@ -18,10 +18,7 @@
     <h3>tri-state checkboxes</h3>
     <tree-root
       id="tree1"
-      (toggleExpanded)="setNodeChildrenStyles($event)"
-      (activate)="setNodeChildrenStyles($event)"
-      (focus)="setNodeChildrenStyles($event)"
-      (blur)="removeBackgrounds($event)"
+    
       [nodes]="nodes"
       [options]="options">
     </tree-root>
@@ -30,10 +27,7 @@
     <tree-root
       class="reverse"
       id="tree2"
-      (toggleExpanded)="setNodeChildrenStyles($event)"
-      (activate)="setNodeChildrenStyles($event)"
-      (focus)="setNodeChildrenStyles($event)"
-      (blur)="removeBackgrounds($event)"
+
       [nodes]="nodes"
       [options]="options">
     </tree-root>
@@ -41,10 +35,7 @@
     <tree-root
       class="reverse"
       id="tree3"
-      (toggleExpanded)="setNodeChildrenStyles($event)"
-      (activate)="setNodeChildrenStyles($event)"
-      (focus)="setNodeChildrenStyles($event)"
-      (blur)="removeBackgrounds($event)"
+
       [nodes]="nodes"
       [options]="optionsDisabled">
     </tree-root>
